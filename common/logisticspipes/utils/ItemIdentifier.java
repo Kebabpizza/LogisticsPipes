@@ -581,7 +581,7 @@ public final class ItemIdentifier implements Comparable<ItemIdentifier> {
 			}
 			fMap.setAccessible(true);
 			@SuppressWarnings("unchecked")
-			HashMap<String, NBTBase> internal = (HashMap<String, NBTBase>) fMap.get(nbt);
+			Map<String, NBTBase> internal = (Map<String, NBTBase>) fMap.get(nbt);
 			for(Entry<String, NBTBase> e : internal.entrySet()) {
 				String k = e.getKey();
 				NBTBase v = e.getValue();
